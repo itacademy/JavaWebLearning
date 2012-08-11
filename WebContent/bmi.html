@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<title>BMI計算サイト</title>
+<style>
+p {
+  margin: 0;
+  padding: 5px;
+}
+input[name='height'],input[name='weight'] {
+  width: 50px;
+  text-align: right;
+}
+</style>
+
+<form action="/JavaWebLearning/calcBmi">
+  <p>身長と体重を入力してください</p>
+  <p>
+    <input type="text" name="height"> cm
+  </p>
+  <p>
+    <input type="text" name="weight"> kg
+  </p>
+  <p>
+    <input type="submit" value="計算">
+  </p>
+</form>
