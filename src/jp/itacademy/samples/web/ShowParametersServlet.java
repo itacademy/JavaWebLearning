@@ -24,7 +24,7 @@ public class ShowParametersServlet extends HttpServlet {
         out.println("<meta charset='utf-8'>");
         out.println("<title>show parameters</title>");
         out.println("<ul>");
-        out.println("<li>name=" + req.getParameter("name") + "</li>");
+        out.println("<li>name=" + req.getParameter("account") + "</li>");
         out.println("<li>pass=" + req.getParameter("pass") + "</li>");
         out.println("<li>plan=" + req.getParameter("plan") + "</li>");
         out.println("<li>like="
