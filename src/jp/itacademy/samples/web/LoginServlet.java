@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 		HttpSession sess = req.getSession();
 		sess.setAttribute("account", account);
 		out.println("<p>ログインしました</p>");
-		out.println("<p><a href=\"memberOnly\">会員専用ページに移動</a></p>");
+		out.println("<p><a href=\"memberOnly\">会員専用ページ</a></p>");
 	}
 
 }
