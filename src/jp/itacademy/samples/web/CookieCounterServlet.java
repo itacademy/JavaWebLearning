@@ -37,6 +37,6 @@ public class CookieCounterServlet extends HttpServlet {
         PrintWriter out = res.getWriter();
         out.println("<!DOCTYPE html>");
         out.println("<meta charset='utf-8'>");
-        out.println("<p>‚ ‚È‚½‚±‚ê‚Ü‚Å‚Ì–K–â‰ñ”‚Í " + count + " ‰ñ‚Å‚·</p>");
+        out.println("<p>‚ ‚È‚½‚Ì–K–â‰ñ”: " + count + " ‰ñ</p>");
     }
 }
