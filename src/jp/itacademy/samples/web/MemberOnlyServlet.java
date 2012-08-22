@@ -28,7 +28,7 @@ public class MemberOnlyServlet extends HttpServlet {
         }
 
         String account = (String) sess.getAttribute("account");
-        if (sess.getAttribute("account") == null) {
+        if (account == null) {
             out.println("<p>ƒƒOƒCƒ“‚µ‚Ä‚­‚¾‚³‚¢</p>");
             return;
         }
