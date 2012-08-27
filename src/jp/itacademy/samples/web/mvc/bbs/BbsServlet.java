@@ -23,6 +23,7 @@ public class BbsServlet extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/mvc/bbs/bbs.jsp").forward(req, res);
     }
 
+    @SuppressWarnings("unchecked")
     protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
 
