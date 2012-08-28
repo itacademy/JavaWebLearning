@@ -4,5 +4,6 @@
 
 <meta charset="utf-8">
 <title>BMI計算サイト</title>
+<style>.bmi { font-size: 2em; padding: 0 .5em; }</style>
 
-<p><%= request.getAttribute("error") %></p>
+<p>あなたのBMIは<span class="bmi">${person.bmi}</span>です。</p>

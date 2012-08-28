@@ -1,6 +1,5 @@
 <%@page contentType="text/html; charset=utf-8" %>
-<%@page import="java.util.List" %>
-<%@page import="jp.itacademy.samples.web.mvc.bbs.Message" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 
@@ -34,22 +33,23 @@ form p {
 
 <div id="board">
 
-<% List<Message> messages = (List<Message>) application.getAttribute("messages"); %>
-<% if (messages == null || messages.isEmpty()) { %>
+<c:if test="${empty messages}">
 <p>まだ書き込みはありません。</p>
-<% } else { %>
-<% for (Message msg : messages) { %>
+</c:if>
+
+<c:if test="${not empty messages}">
+<c:forEach var="msg" items="${messages}">
   <div class="message">
-    <p class="body"><%= msg.getBody() %></p>
+    <p class="body">${msg.body}</p>
     <p class="meta">
-      by <span class="poster"><%= msg.getPoster() %></span>
-      at <span class="posted-at"><%= msg.getPostedAt() %></span>
+      by <span class="poster">${msg.poster}</span>
+      at <span class="posted-at">${msg.postedAt}</span>
     </p>
   </div>
-<% } %>
-<% } %>
+</c:forEach>
+</c:if>
 
-<form action="<%= request.getContextPath() %>/mvc/bbs" method="POST">
+<form action="${pageContext.request.contextPath}/mvc/bbs" method="POST">
   <p>名前: <input type="text" name="poster"></p>
   <p><textarea name="body" rows="5" cols="50"></textarea></p>
   <p><input type="submit" value="投稿"></p>
