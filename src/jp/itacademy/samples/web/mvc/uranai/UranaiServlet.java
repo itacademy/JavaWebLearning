@@ -18,7 +18,8 @@ public class UranaiServlet extends HttpServlet {
         String bloodType = req.getParameter("bloodType");
         if (bloodType == null || bloodType.trim().length() == 0) {
             req.setAttribute("error", "ƒpƒ‰ƒ[ƒ^‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñ");
-            req.getRequestDispatcher("/mvc/uranai/error.jsp").forward(req, res);
+            req.getRequestDispatcher("/WEB-INF/mvc/uranai/error.jsp").forward(req, res);
+            return;
         }
         
         Uranai uranai = new Uranai(bloodType);
