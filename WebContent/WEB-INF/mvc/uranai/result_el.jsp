@@ -6,4 +6,4 @@
 <title>血液型占いサイト</title>
 <style>.result { font-size: 1.2em; }</style>
 
-<p class="result"><%= request.getAttribute("result") %></p>
+<p class="result">${result}</p>

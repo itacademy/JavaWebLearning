@@ -5,4 +5,4 @@
 <meta charset="utf-8">
 <title>BMI計算サイト</title>
 
-<p><%= request.getAttribute("error") %></p>
+<p>${error}</p>
