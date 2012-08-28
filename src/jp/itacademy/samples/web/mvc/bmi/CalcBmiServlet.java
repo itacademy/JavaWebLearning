@@ -23,7 +23,7 @@ public class CalcBmiServlet extends HttpServlet {
             height = Double.parseDouble(req.getParameter("height"));
         } catch (Exception e) {
             req.setAttribute("error", "ƒpƒ‰ƒ[ƒ^‚ª³‚µ‚­‚ ‚è‚Ü‚¹‚ñ");
-            req.getRequestDispatcher("/mvc/bmi/error.jsp").forward(req, res);
+            req.getRequestDispatcher("/WEB-INF/mvc/bmi/error.jsp").forward(req, res);
             return;
         }
 
