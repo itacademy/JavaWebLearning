@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<title>両替計算サイト</title>
+<style>
+p {
+  margin: 0;
+  padding: 5px;
+}
+</style>
+
+<form action="mvc/exchange">
+  <input type="text" name="amount"> 円を
+  <select name="currency">
+    <option value=""></option>
+    <option value="USD">米ドル</option>
+    <option value="CNY">中国元</option>
+    <option value="ZWD">ジンバブエ・ドル</option>
+  </select> に変換
+  <p>
+    <input type="submit" value="計算する">
+  </p>
+</form>
