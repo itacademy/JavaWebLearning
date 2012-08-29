@@ -12,7 +12,6 @@ header {
 footer {
   padding: 10px;
   border-top: solid 1px #999;
-  font-style: italic;
 }
 #main {
   padding: 10px;
