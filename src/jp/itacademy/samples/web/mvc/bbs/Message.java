@@ -19,7 +19,7 @@ public class Message {
     }
 
     public String getBody() {
-        return body;
+        return body.replaceAll("\n", "<br/>");
     }
 
     public Date getPostedAt() {
