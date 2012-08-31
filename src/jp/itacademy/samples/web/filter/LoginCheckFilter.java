@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebFilter(filterName = "login-check", urlPatterns = "/filter/memberOnly/*")
+@WebFilter("/filter/memberOnly/*")
 public class LoginCheckFilter implements Filter {
 
     public void init(FilterConfig conf) throws ServletException {
