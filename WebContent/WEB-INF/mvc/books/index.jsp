@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 
 <meta charset="utf-8">
-<title>おみせ - カート内容</title>
+<title>書籍一覧</title>
 <style>
 #books {
   border-collapse: collapse;
